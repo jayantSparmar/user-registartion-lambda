@@ -2,7 +2,7 @@ package com.bridgelabz;
 /**
  * Program on User Registration Using Regex
  *
- * @author : Shubham Pawar
+ * @author : Jayant Singh Parmar
  * @since : 04/04/2022
  * */
 
@@ -33,6 +33,10 @@ public class UserRegistration {
         };
         System.out.println(isValidEmail.validate("^[a-z]+[+-_.]*[a-z]*[@][a-z]+[.][a-z]{2,4}[.]*([a-z]{2})*$",
                 "jayantparmar420@gmail.com"));
+        Validation isValidMobileNumber = (pattern, mobileNumber) -> {
+            return "Mobile number is " + Pattern.compile(pattern).matcher(mobileNumber).matches();
+        };
+        System.out.println(isValidMobileNumber.validate("^[91]+[ ]?[6-9]{1}[0-9]{9}$", "91 7566033032"));
 
     }
 }
