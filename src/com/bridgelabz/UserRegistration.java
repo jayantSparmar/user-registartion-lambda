@@ -2,7 +2,7 @@ package com.bridgelabz;
 /**
  * Program on User Registration Using Regex
  *
- * @author : Shubham Pawar
+ * @author : Jayant singh parmar
  * @since : 04/04/2022
  * */
 
