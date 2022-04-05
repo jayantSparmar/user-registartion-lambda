@@ -37,6 +37,11 @@ public class UserRegistration {
             return "Mobile number is " + Pattern.compile(pattern).matcher(mobileNumber).matches();
         };
         System.out.println(isValidMobileNumber.validate("^[91]+[ ]?[6-9]{1}[0-9]{9}$", "91 7566033032"));
+        Validation isValidPassword1 = (pattern, password) -> {
+            return "Password rule is " + Pattern.compile(pattern).matcher(password).matches();
+        };
+        System.out.println(isValidPassword1.validate("^[0-9a-zA-Z!,@#$&*().]{8,}$", "jayant3@"));
 
     }
 }
+
